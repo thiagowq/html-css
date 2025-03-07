@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+p#principal{
+    background-color: green;
+}
+
+.primeiro{
+    background-color: aqua;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: brown;
+}
+
+div:hover{
+    background-color: black;
+}
