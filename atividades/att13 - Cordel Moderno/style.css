@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'minhafonte';
+    src: url(bubblegum/Bubblegum.ttf) format('opentype');
+}
+
+body{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-family: 'minhafonte';
+}
+
+body > div{
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body > div > p{
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    text-align: left;  
+    margin-left: 20px;  
+}
