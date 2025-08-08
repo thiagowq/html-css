@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <!-- Lembrar de alterar o método quando o usuário for enviar imagens -->
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de Satisfação: </label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </p>
+
+        <p>
+        <!-- Quando o usuário for enviar a foto, o método precisa ser POST -->
+            <label for="ifoto">Foto do Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
