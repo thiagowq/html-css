@@ -7,26 +7,46 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
             <label for="iest">Estado</label>
             <select name="estado" id="iest">
 
-                
+                <option value=""select>--- Escolha ---</option>
                 <optgroup label="Região Sudeste">
                     <option value="SP">São Paulo</option>
                     <option value="RJ">Rio de Janeiro</option>
                     <option value="MG">Minas Gerais</option>
                 </optgroup>
-                
+
+                <!-- No optgroup consigo selecionar apenas as que aparecem como opção -->
                 <optgroup label="Região Nordeste">
                     <option value="MA">Maranhão</option>
                     <option value="PE">Pernambuco</option>
                     <option value="RN">Rio Grande do Norte</option>
                 </optgroup>
             </select>
+        
         </p>
+
+        <p>
+            <label for="iprof">Profissão: </label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <!-- No Datalist consigo alterar a profissão digitando-->
+            <datalist id="lstprof">
+                <option value="ADM">Adiministrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem: </label>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
